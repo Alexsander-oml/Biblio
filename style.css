@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, rgb(71, 13, 231), rgb(146, 28, 201));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: rgb(255, 255, 255);
+}
+
+.content {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 20vw;
+  max-width: 600px;
+}
+
+fieldset {
+  border: 3px solid rgb(30, 144, 255);
+  padding: 1rem;
+}
+
+.inputB {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+legend {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(30, 144, 255);
+  border-radius: 0.75rem;
+  user-select: none;
+}
+
+.inu {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: #fff;
+  z-index: 100;
+}
+
+.inu:focus {
+  outline: none;
+}
+
+.inputA {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  background: linear-gradient(to right, rgb(82, 10, 218), rgb(90, 20, 220));
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.inputA button {
+  width: 45%;
+}
+
+.inputA input:hover {
+  background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(90, 19, 195));
+}
+
+.lbp {
+  position: absolute;
+  user-select: none;
+  transition: .5s;
+}
+
+.inu:focus + .lbp, .inu:valid + .lbp {
+  color: rgb(30, 144, 255);
+  transform: translateY(-1rem);
+  font-size: 0.8em;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(90, 19, 195);
+  border-radius: 1rem;
+}
+
+/* ::-webkit-scrollbar-track {
+  background:rgb(146, 28, 201);
+} */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(90, 19, 195) rgb(146, 28, 201);
+}
+
+h1 {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: .5em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: .2s;
+}
+
+a:hover {
+  color: dodgerblue;
+}
+
+.anime {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0.5rem solid rgba(0, 0, 0, 0);
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  border-radius: 1rem;
+  margin: 1.5rem;
+  display: flex;
+  width: 500px;
+}
+
+.anime .imggroup {
+  position: relative;
+  padding: 1rem;
+  padding-bottom: 0;
+  user-select: none;
+}
+
+.anime .fav {
+  width: 3rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+.anime .img {
+  height: 12rem;
+}
+
+.anime .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.anime .article .text {
+  line-height: 1.5rem;
+}
+
+.anime .article .interact {
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.anime .article .interact .stars img {
+  height: 2rem;
+  cursor: pointer;
+}
+
+.anime .article .interact .status {
+  width: 25%;
+}
